@@ -1,1 +1,18 @@
+<!--<link rel="stylesheet" href="app.css">-->
+
+<!--<style>-->
+<!--   body {-->
+<!--    background: yellow;-->
+<!--    color: purple;-->
+<!--    }-->
+<!--</style>-->
+
+<% include partials/header %>
 <h1>You love: <%= theThing.toUpperCase() %> </h1>
+
+<% if(theThing.toLowerCase() === "rusty"){ %>
+    <p>Congrats, Rusty is the best!</p>
+<% } else { %>
+     <p>Hmm, why don't you like Rusty?</p>   
+<% } %>
+<% include partials/footer %>
